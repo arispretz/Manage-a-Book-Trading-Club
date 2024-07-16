@@ -14,7 +14,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://book-trading-club-frontend-ci06l6mor.vercel.app',
   credentials: true,
 }));
 
