@@ -1,0 +1,28 @@
+{
+  "name": "book-trading-club-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.mjs",
+  "type": "module",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@octokit/auth-oauth-app": "^8.1.1",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.5",
+    "passport": "^0.7.0",
+    "passport-github": "^1.1.0",
+    "passport-github2": "^0.1.12",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
