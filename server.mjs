@@ -14,7 +14,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-  origin: 'https://book-trading-club-frontend.vercel.app',
+  origin: 'https://book-trading-club-frontend-bg0zsuav0.vercel.app',
   credentials: true,
 }));
 
