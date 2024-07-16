@@ -36,7 +36,7 @@ app.use('/api/auth', authRoutes);
 app.use('/auth', authRoutes);
 
 // Protected routes
-app.use('/api/user', verifyToken, userRoutes); // Consolidar rutas protegidas bajo el mismo prefijo
+app.use('/api/user', verifyToken, userRoutes);
 app.use('/api/requests', verifyToken, requestRoutes);
 
 // Public route
@@ -44,7 +44,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-// Middleware para manejo de errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something went wrong!');
